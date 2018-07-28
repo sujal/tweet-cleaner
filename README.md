@@ -4,6 +4,8 @@ Node.js module for deleting tweets
 
 ----
 
+### Please Note: if you follow these instructions, the utility will delete ALL of your tweets. There is NO undo. Please use caution before running this utility.
+
 This fork of the [original project from kakts](https://github.com/kakts/tweet-cleaner) that converts it to parse the `tweets.js` file that comes as part of the [data archive Twitter now offers all users](https://help.twitter.com/en/managing-your-account/accessing-your-twitter-data). Why make this change? Because, if you have more than ~3200 tweets, it's the only way to delete everything. You need a list of IDs, and that file, in the data backup, is the only place that has the IDs.
 
 
