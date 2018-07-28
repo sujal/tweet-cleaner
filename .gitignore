@@ -1,3 +1,4 @@
 conf/credential.js
 node_modules
 tweets.csv
+errors.txt
