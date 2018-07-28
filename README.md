@@ -12,6 +12,9 @@ There are a few other small changes. Errors are now sent to STDERR, so you can l
 ## Usage
 
 1. Create a `credential.js` file in the conf subdirectory. You can copy the `default-credential.js` file as a template. It documents the format.
+	- You will need to create a twitter APP to get the values necessary. You can find some instructions for the current process [here](https://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/). This process will change soon, unfortunately. I'll try to update the docs once I find a good tutorial.
+	- The application will require read & write access.
+	- Make sure you create the app AND the access tokens.
 2. Download your Twitter archive: https://help.twitter.com/en/managing-your-account/accessing-your-twitter-data
 3. Expand the archive somewhere handy.
 3. Run the following command, substituting the path to the tweets.js file:
