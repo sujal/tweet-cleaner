@@ -9,9 +9,15 @@ This fork of the [original project from kakts](https://github.com/kakts/tweet-cl
 
 There are a few other small changes. Errors are now sent to STDERR, so you can log them separately. A few other cleanups to allow the app to continue running if some "expected" errors occur. They will get logged to the error stream, so you can monitor it for issues.
 
-A typical run of the app might look like this on a Mac:
+## Usage
+
+1. Create a `credential.js` file in the conf subdirectory. You can copy the `default-credential.js` file as a template. It documents the format.
+2. Download your Twitter archive: https://help.twitter.com/en/managing-your-account/accessing-your-twitter-data
+3. Expand the archive somewhere handy.
+3. Run the following command, substituting the path to the tweets.js file:
 
 ```
-node clean.js ~/temp/tweet.js 2>>errors.txt
+node clean.js path/to/the/tweets.js 2>>errors.txt
 ```
 
+That should parse the list of your tweets from the backup and clear **EVERYTHING**. **THERE IS NO UNDO ON THIS OPERATION!!** Use caution before running this utility.
